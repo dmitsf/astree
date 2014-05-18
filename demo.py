@@ -1,0 +1,10 @@
+from example import *
+s = Some() 
+print( "s = Some(); ID: {ID}, Name: {Name}".format(ID=s.ID(),Name=s.Name()) )
+s = Some(123,'asd')
+print( "s = Some(123,'asd'); ID: {ID}, Name: {Name}".format(ID=s.ID(),Name=s.Name()) )
+s.ResetID(234); print("s.ResetID(234); ID:",s.ID())
+s.ResetID(); print("s.ResetID(); ID:",s.ID())
+s.ChangeName('qwe'); print("s.ChangeName('qwe'); Name:'%s'" % s.Name())
+s.SomeChanges(345,'zxc')
+print( "s.SomeChanges(345,'zxc'); ID: {ID}, Name: {Name}".format(ID=s.ID(),Name=s.Name()) )
